@@ -88,4 +88,14 @@ Rails.application.configure do
 
   # Only use :id for inspections in production.
   config.active_record.attributes_for_inspect = [ :id ]
+
+  # Enable DNS rebinding protection and allow specific custom production domains
+  config.hosts = [
+    "thewallx.com",          # Live WallX Storefront
+    "artolika.com",          # Live Artolika Storefront
+    "app.thewallx.com",      # Your Spree Admin Panel
+    /.*\.thewallx\.com/,     # Subdomains for WallX
+    /.*\.artolika\.com/,     # Subdomains for Artolika
+    /.*\.sslip\.io/          # ALLOWS TEMPORARY COOLIFY URLS
+  ]
 end
