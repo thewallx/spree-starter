@@ -380,6 +380,9 @@ GEM
       reline (>= 0.4.2)
     jmespath (1.6.2)
     json (2.20.0)
+    jsonapi-rspec (0.0.11)
+      rspec-core
+      rspec-expectations
     jwt (3.2.0)
       base64
     kaminari (1.2.2)
@@ -830,10 +833,16 @@ GEM
       rails-i18n
       spree_core (>= 4.2.0.rc3)
       spree_extension
+    spree_multi_store (1.0.2)
+      spree (>= 5.4.0.beta)
+      spree_admin (>= 5.4.0.beta)
     spree_paypal_checkout (0.7.1)
       paypal-server-sdk (~> 1.1)
       spree (>= 5.4.0)
       spree_admin (>= 5.4.0)
+    spree_posts (1.0.0)
+      spree (>= 5.4.0.beta)
+      spree_admin (>= 5.4.0.beta)
     spree_stripe (1.7.1)
       spree (>= 5.4.0.beta)
       spree_admin (>= 5.4.0.beta)
@@ -942,6 +951,7 @@ DEPENDENCIES
   dotenv-rails
   image_processing (~> 1.2)
   importmap-rails
+  jsonapi-rspec
   letter_opener
   listen
   lograge
@@ -965,7 +975,9 @@ DEPENDENCIES
   spree_delhivery!
   spree_dev_tools
   spree_i18n
+  spree_multi_store (~> 1.0)
   spree_paypal_checkout
+  spree_posts (~> 1.0)
   spree_product_reviews!
   spree_razorpay_checkout!
   spree_stripe
@@ -1097,6 +1109,7 @@ CHECKSUMS
   irb (1.18.0) sha256=de9454a0703a54704b9811a5ef31a60c86949fbf4013fcf244fabc7c775248e3
   jmespath (1.6.2) sha256=238d774a58723d6c090494c8879b5e9918c19485f7e840f2c1c7532cf84ebcb1
   json (2.20.0) sha256=9362bc6e55a952b056abf9167cf053358181c904cb70cd6eee0808ea830fc32b
+  jsonapi-rspec (0.0.11) sha256=995f1adb59b386cc36e3f6823c828df575167586937e3e42601914c4ee650082
   jwt (3.2.0) sha256=5419b1fe37b1da0982bd07051f573a8b8789ab724c2aa7e785e4784a3ed217d7
   kaminari (1.2.2) sha256=c4076ff9adccc6109408333f87b5c4abbda5e39dc464bd4c66d06d9f73442a3e
   kaminari-actionview (1.2.2) sha256=1330f6fc8b59a4a4ef6a549ff8a224797289ebf7a3a503e8c1652535287cc909
@@ -1245,7 +1258,9 @@ CHECKSUMS
   spree_dev_tools (0.6.1) sha256=4d86ab6643cbc7a2b813faa70cd397028380ee8cd2be923f6eb5db8cc126ea14
   spree_extension (1.0.2) sha256=71725dafe45319a2be1bd2b564a416afe8029af8e18ac703bdb835e09553e1df
   spree_i18n (5.3.2) sha256=03b805235ca156644951f6bc3d07cbe43d0aa01134c4a27e3f3304011956f79b
+  spree_multi_store (1.0.2) sha256=f84359e1c7c276a36134157a29a4b8be55546ddf54b9d6048ce19aa3d7dc1728
   spree_paypal_checkout (0.7.1) sha256=89a5715a3b23b2ac04a27ddfd12416101fab03996cf70826d35dedef3bb4b9de
+  spree_posts (1.0.0) sha256=3f9dbf4af97186cca99e81f1a1ffb13c745d5f8cb6e43a1884eb3acf93063d4b
   spree_product_reviews (1.2.0)
   spree_razorpay_checkout (0.3.3)
   spree_stripe (1.7.1) sha256=55d5846709fc43a0442068577fb0dc43bd25d14abf66352a37272e2ac4f95ce5

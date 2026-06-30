@@ -36,6 +36,9 @@ gem 'spree_i18n'
 gem 'spree_stripe'
 gem 'spree_adyen'
 gem 'spree_paypal_checkout'
+gem "spree_multi_store", "~> 1.0"
+gem "spree_posts", "~> 1.0"
+gem 'jsonapi-rspec', group: :test
 gem 'spree_custom_domains', git: 'https://github.com/spree/spree_custom_domains.git', branch: 'main'
 gem 'spree_product_reviews', git: 'https://github.com/umeshravani/spree_product_reviews.git', branch: 'main'
 gem 'spree_razorpay_checkout', git: 'https://github.com/umeshravani/spree_razorpay.git', branch: 'main'
