@@ -69,6 +69,7 @@ Rails.application.configure do
     config.action_mailer.smtp_settings = {
       address:              ENV["SMTP_HOST"],
       port:                 ENV.fetch("SMTP_PORT", 587).to_i,
+      domain:               ENV.fetch("SMTP_DOMAIN", "thewallx.com"), # Added for Google Workspace validation
       user_name:            ENV["SMTP_USERNAME"],
       password:             ENV["SMTP_PASSWORD"],
       authentication:       :plain,
@@ -93,7 +94,8 @@ Rails.application.configure do
   config.hosts = [
     "thewallx.com",          # Live WallX Storefront
     "artolika.com",          # Live Artolika Storefront
-    "app.thewallx.com",      # Your Spree Admin Panel
+    "server.thewallx.com",      # Your Spree Admin Panel
+    "server.artolika.com",      # Your Spree Admin Panel
     "api.thewallx.com",      # WallX Frontend API Endpoint
     "api.artolika.com",      # Artolika Frontend API Endpoint
     /.*\.thewallx\.com/,     # Automatically allows any other subdomains for WallX
