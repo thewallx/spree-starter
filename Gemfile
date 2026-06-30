@@ -43,6 +43,7 @@ gem 'spree_custom_domains', git: 'https://github.com/spree/spree_custom_domains.
 gem 'spree_product_reviews', git: 'https://github.com/umeshravani/spree_product_reviews.git', branch: 'main'
 gem 'spree_razorpay_checkout', git: 'https://github.com/umeshravani/spree_razorpay.git', branch: 'main'
 gem 'spree_delhivery', git: 'https://github.com/umeshravani/spree_delhivery.git', branch: 'main'
+gem 'spree_three_d_ar', git: 'https://github.com/umeshravani/spree_three_d_ar.git', branch: 'main'
 
 # Rails & Infrastructure
 gem 'aws-sdk-s3', require: false
