@@ -94,8 +94,9 @@ Rails.application.configure do
     "thewallx.com",          # Live WallX Storefront
     "artolika.com",          # Live Artolika Storefront
     "app.thewallx.com",      # Your Spree Admin Panel
-    /.*\.thewallx\.com/,     # Subdomains for WallX
-    /.*\.artolika\.com/,     # Subdomains for Artolika
-    /.*\.sslip\.io/          # ALLOWS TEMPORARY COOLIFY URLS
+    "api.thewallx.com",      # WallX Frontend API Endpoint
+    "api.artolika.com",      # Artolika Frontend API Endpoint
+    /.*\.thewallx\.com/,     # Automatically allows any other subdomains for WallX
+    /.*\.artolika\.com/      # Automatically allows any other subdomains for Artolika
   ]
 end
