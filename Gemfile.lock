@@ -1,4 +1,13 @@
 GIT
+  remote: https://github.com/spree/spree_custom_domains.git
+  revision: 303c109bf696c7a929a468c401389fa7ca339fbc
+  branch: main
+  specs:
+    spree_custom_domains (0.1.0)
+      spree (>= 5.4.0.beta)
+      spree_admin (>= 5.4.0.beta)
+
+GIT
   remote: https://github.com/umeshravani/spree_delhivery.git
   revision: 27dd24777b1172913b2675c5113c7a6bc4c4dfc9
   branch: main
@@ -952,6 +961,7 @@ DEPENDENCIES
   spree (>= 5.5.1)
   spree_admin (>= 5.5.1)
   spree_adyen
+  spree_custom_domains!
   spree_delhivery!
   spree_dev_tools
   spree_i18n
@@ -1230,6 +1240,7 @@ CHECKSUMS
   spree_api (5.5.1) sha256=89d798f27e68140503db2b0128614e8340ab40c3529ff15db628ae2fca6ad3f5
   spree_auth_devise (4.6.3) sha256=5eeada77570f5ab335a9c6c150d7cdaee39203ce43b70ac24d2ffb195952ed6e
   spree_core (5.5.1) sha256=5f6dea930ebe7c61464def6eb8481b7cdee486ef286fafb5cb49ed24c3775b85
+  spree_custom_domains (0.1.0)
   spree_delhivery (1.0.0)
   spree_dev_tools (0.6.1) sha256=4d86ab6643cbc7a2b813faa70cd397028380ee8cd2be923f6eb5db8cc126ea14
   spree_extension (1.0.2) sha256=71725dafe45319a2be1bd2b564a416afe8029af8e18ac703bdb835e09553e1df
